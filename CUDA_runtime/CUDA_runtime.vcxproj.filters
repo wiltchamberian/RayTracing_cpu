@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="func.cu" />
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="cuda_raytracing\raytracing.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_raytracing\hitable.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cu_math\vector.cu">
+      <Filter>cu_math</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_raytracing\material.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_raytracing\texture.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_raytracing\main_test.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_raytracing\camera.cu">
+      <Filter>cuda_raytracing</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h" />
+    <ClInclude Include="kernal.h" />
+    <ClInclude Include="..\Math\Algorithm.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\BipartiteGraph.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Box.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Brush.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Capsule.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Cylinder.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Equation.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Expression.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\FFT.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Geometry.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Graph.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Hash.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Line.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\MathConstants.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\MathDefine.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\MathUtils.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Matrix3x3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Matrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\MatrixN.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\NumericLimits.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Pluecker.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Polygon.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Polynomial.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Polynomial3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Rand.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Random.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Ray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Rect.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Rotator.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Segment3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Sphere.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Sphere_Ray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Transform3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Triangle.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Vector.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Vector2D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Vector3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Vector4D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_raytracing\cu_hitable.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="cu_math\cu_vector.h">
+      <Filter>cu_math</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="cuda_raytracing\cu_raytracing.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_raytracing\cu_texture.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_raytracing\cu_material.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_raytracing\cu_camera.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_raytracing\main_test.h">
+      <Filter>cuda_raytracing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{f81ccede-17ab-4f4b-afba-3df160ba2651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda_raytracing">
+      <UniqueIdentifier>{ac28f23e-18cf-40a4-9073-6e02ebd09667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cu_math">
+      <UniqueIdentifier>{5748ca91-639f-4d22-a389-f2f2bef4cc78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Math\Algorithm.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\BipartiteGraph.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Box.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Brush.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Capsule.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Cylinder.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Equation.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Expression.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\FFT.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Geometry.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Graph.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Line.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Matrix3x3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Matrix4x4.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\MatrixN.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Plane.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Pluecker.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Polynomial.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Polynomial3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Quaternion.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Random.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Ray.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Rotator.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Segment3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Sphere.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Sphere_Ray.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Transform3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Triangle.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Vector.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Vector2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Vector3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Vector4D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Math\CMakeLists.txt">
+      <Filter>Math</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FBDABF23-1EC8-41F1-86E7-13CE2B9115A8}</ProjectGuid>
+    <RootNamespace>CUDA_runtime</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);G:\RayTracing\CUDA_runtime\cuda_raytracing;G:\RayTracing\CUDA_runtime\cu_math;G:\RayTracing\CUDA_runtime;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>glut64.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\RayTracing\CUDA_runtime\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CudaCompile Include="cuda_raytracing\camera.cu" />
+    <CudaCompile Include="cuda_raytracing\hitable.cu" />
+    <CudaCompile Include="cuda_raytracing\main_test.cu" />
+    <CudaCompile Include="cuda_raytracing\material.cu" />
+    <CudaCompile Include="cuda_raytracing\raytracing.cu" />
+    <CudaCompile Include="cuda_raytracing\texture.cu" />
+    <CudaCompile Include="cu_math\vector.cu" />
+    <CudaCompile Include="func.cu" />
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="main.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Math\Algorithm.h" />
+    <ClInclude Include="..\Math\BipartiteGraph.h" />
+    <ClInclude Include="..\Math\Box.h" />
+    <ClInclude Include="..\Math\Brush.h" />
+    <ClInclude Include="..\Math\Capsule.h" />
+    <ClInclude Include="..\Math\Cylinder.h" />
+    <ClInclude Include="..\Math\Equation.h" />
+    <ClInclude Include="..\Math\Expression.h" />
+    <ClInclude Include="..\Math\FFT.h" />
+    <ClInclude Include="..\Math\Geometry.h" />
+    <ClInclude Include="..\Math\Graph.h" />
+    <ClInclude Include="..\Math\Hash.h" />
+    <ClInclude Include="..\Math\Line.h" />
+    <ClInclude Include="..\Math\MathConstants.h" />
+    <ClInclude Include="..\Math\MathDefine.h" />
+    <ClInclude Include="..\Math\MathUtils.h" />
+    <ClInclude Include="..\Math\Matrix3x3.h" />
+    <ClInclude Include="..\Math\Matrix4x4.h" />
+    <ClInclude Include="..\Math\MatrixN.h" />
+    <ClInclude Include="..\Math\NumericLimits.h" />
+    <ClInclude Include="..\Math\Plane.h" />
+    <ClInclude Include="..\Math\Pluecker.h" />
+    <ClInclude Include="..\Math\Polygon.h" />
+    <ClInclude Include="..\Math\Polynomial.h" />
+    <ClInclude Include="..\Math\Polynomial3D.h" />
+    <ClInclude Include="..\Math\Quaternion.h" />
+    <ClInclude Include="..\Math\Rand.h" />
+    <ClInclude Include="..\Math\Random.h" />
+    <ClInclude Include="..\Math\Ray.h" />
+    <ClInclude Include="..\Math\Rect.h" />
+    <ClInclude Include="..\Math\Rotator.h" />
+    <ClInclude Include="..\Math\Segment3D.h" />
+    <ClInclude Include="..\Math\Sphere.h" />
+    <ClInclude Include="..\Math\Sphere_Ray.h" />
+    <ClInclude Include="..\Math\Transform3D.h" />
+    <ClInclude Include="..\Math\Triangle.h" />
+    <ClInclude Include="..\Math\Vector.h" />
+    <ClInclude Include="..\Math\Vector2D.h" />
+    <ClInclude Include="..\Math\Vector3D.h" />
+    <ClInclude Include="..\Math\Vector4D.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="cuda_raytracing\cu_camera.h" />
+    <ClInclude Include="cuda_raytracing\cu_raytracing.h" />
+    <ClInclude Include="cuda_raytracing\cu_texture.h" />
+    <ClInclude Include="cuda_raytracing\cu_hitable.h" />
+    <ClInclude Include="cuda_raytracing\cu_material.h" />
+    <ClInclude Include="cuda_raytracing\main_test.h" />
+    <ClInclude Include="cu_math\cu_vector.h" />
+    <ClInclude Include="func.h" />
+    <ClInclude Include="kernal.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Math\Algorithm.cpp" />
+    <ClCompile Include="..\Math\BipartiteGraph.cpp" />
+    <ClCompile Include="..\Math\Box.cpp" />
+    <ClCompile Include="..\Math\Brush.cpp" />
+    <ClCompile Include="..\Math\Capsule.cpp" />
+    <ClCompile Include="..\Math\Cylinder.cpp" />
+    <ClCompile Include="..\Math\Equation.cpp" />
+    <ClCompile Include="..\Math\Expression.cpp" />
+    <ClCompile Include="..\Math\FFT.cpp" />
+    <ClCompile Include="..\Math\Geometry.cpp" />
+    <ClCompile Include="..\Math\Graph.cpp" />
+    <ClCompile Include="..\Math\Line.cpp" />
+    <ClCompile Include="..\Math\Matrix3x3.cpp" />
+    <ClCompile Include="..\Math\Matrix4x4.cpp" />
+    <ClCompile Include="..\Math\MatrixN.cpp" />
+    <ClCompile Include="..\Math\Plane.cpp" />
+    <ClCompile Include="..\Math\Pluecker.cpp" />
+    <ClCompile Include="..\Math\Polynomial.cpp" />
+    <ClCompile Include="..\Math\Polynomial3D.cpp" />
+    <ClCompile Include="..\Math\Quaternion.cpp" />
+    <ClCompile Include="..\Math\Random.cpp" />
+    <ClCompile Include="..\Math\Ray.cpp" />
+    <ClCompile Include="..\Math\Rotator.cpp" />
+    <ClCompile Include="..\Math\Segment3D.cpp" />
+    <ClCompile Include="..\Math\Sphere.cpp" />
+    <ClCompile Include="..\Math\Sphere_Ray.cpp" />
+    <ClCompile Include="..\Math\Transform3D.cpp" />
+    <ClCompile Include="..\Math\Triangle.cpp" />
+    <ClCompile Include="..\Math\Vector.cpp" />
+    <ClCompile Include="..\Math\Vector2D.cpp" />
+    <ClCompile Include="..\Math\Vector3D.cpp" />
+    <ClCompile Include="..\Math\Vector4D.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Math\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.targets" />
+  </ImportGroup>
+</Project>

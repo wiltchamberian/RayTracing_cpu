@@ -1,0 +1,16 @@
+#ifndef __MATH_CONSTANTS_H
+#define __MATH_CONSTANTS_H
+
+namespace Sun {
+
+#define A_PI 3.14159265358979
+#define A_TWICE_PI 6.2831853071796
+#define A_HALF_PI 1.5707963267949
+#define A_E 2.718281828459
+#define D2R 0.017453292519943  //PI/180
+#define R2D 57.295779513082     //180/PI
+#define INV_SQRT2 0.707106781186547  //1/sqrt(2)
+
+}
+
+#endif 

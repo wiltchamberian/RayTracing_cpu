@@ -1,0 +1,98 @@
+﻿  Compiling CUDA source file main.cu...
+  
+  G:\RayTracing\CUDA_runtime>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "F:\VisualStudio2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu -rdc=true -IG:\RayTracing\ -IG:\RayTracing\CUDA_runtime\cuda_raytracing -IG:\RayTracing\CUDA_runtime\cu_math -IG:\RayTracing\CUDA_runtime -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\main.cu.obj "G:\RayTracing\CUDA_runtime\main.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(825): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1760): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(2622): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(3461): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(4404): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(5302): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(6213): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7094): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7893): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(774): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(1629): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h(926): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_fp16.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(127): warning C4005: “CALLBACK”: 宏重定义
+G:\RayTracing\CUDA_runtime\cuda_raytracing\cu_material.h(8): warning : a storage class may not be specified here
+  
+G:\RayTracing\CUDA_runtime\cuda_raytracing\cu_material.h(9): warning : a storage class may not be specified here
+  
+G:\RayTracing\CUDA_runtime\common/cpu_bitmap.h(49): warning : conversion from a string literal to "char *" is deprecated
+  
+G:\RayTracing\CUDA_runtime\common/cpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+G:/RayTracing/CUDA_runtime/main.cu(578): warning : conversion from a string literal to "char *" is deprecated
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(825): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1760): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(2622): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(3461): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(4404): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(5302): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(6213): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7094): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7893): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(774): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt/device_functions.h(1629): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\device_double_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\sm_20_intrinsics.h(926): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_fp16.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(127): warning C4005: “CALLBACK”: 宏重定义
+G:\RayTracing\CUDA_runtime\cuda_raytracing\cu_material.h(8): warning : a storage class may not be specified here
+  
+G:\RayTracing\CUDA_runtime\cuda_raytracing\cu_material.h(9): warning : a storage class may not be specified here
+  
+G:\RayTracing\CUDA_runtime\common/cpu_bitmap.h(49): warning : conversion from a string literal to "char *" is deprecated
+  
+G:\RayTracing\CUDA_runtime\common/cpu_anim.h(61): warning : conversion from a string literal to "char *" is deprecated
+  
+G:/RayTracing/CUDA_runtime/main.cu(578): warning : conversion from a string literal to "char *" is deprecated
+  
+  main.cu
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(825): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(1760): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(2622): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(3461): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(4404): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(5302): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(6213): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7094): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\crt\math_functions.h(7893): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  
+  G:\RayTracing\CUDA_runtime>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -dlink -o x64\Debug\CUDA_runtime.device-link.obj -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -LG:\RayTracing\CUDA_runtime\lib -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64" glut64.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  -gencode=arch=compute_35,code=sm_35 -G --machine 64 x64\Debug\camera.cu.obj x64\Debug\hitable.cu.obj x64\Debug\main_test.cu.obj x64\Debug\material.cu.obj x64\Debug\raytracing.cu.obj x64\Debug\texture.cu.obj x64\Debug\vector.cu.obj x64\Debug\func.cu.obj x64\Debug\kernel.cu.obj x64\Debug\main.cu.obj 
+  glut64.lib
+  cudart_static.lib
+  kernel32.lib
+  user32.lib
+  gdi32.lib
+  winspool.lib
+  comdlg32.lib
+  advapi32.lib
+  shell32.lib
+  ole32.lib
+  oleaut32.lib
+  uuid.lib
+  odbc32.lib
+  odbccp32.lib
+  camera.cu.obj
+  hitable.cu.obj
+  main_test.cu.obj
+  material.cu.obj
+  raytracing.cu.obj
+  texture.cu.obj
+  vector.cu.obj
+  func.cu.obj
+  kernel.cu.obj
+  main.cu.obj
+    正在创建库 G:\RayTracing\x64\Debug\CUDA_runtime.lib 和对象 G:\RayTracing\x64\Debug\CUDA_runtime.exp
+  CUDA_runtime.vcxproj -> G:\RayTracing\x64\Debug\CUDA_runtime.exe

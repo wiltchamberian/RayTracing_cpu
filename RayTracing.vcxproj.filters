@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{64b7f36e-2c94-4e8d-a0a9-0ddc7665341e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MAIN.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hitable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereObj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HitableList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BVH.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HitableSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HitRecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuRayTracing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceBuilder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Algorithm.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\BipartiteGraph.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Box.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Brush.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Capsule.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Cylinder.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Equation.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Expression.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FFT.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Geometry.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Graph.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Line.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix3x3.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix4x4.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\MatrixN.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Plane.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Pluecker.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Polynomial.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Polynomial3D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Quaternion.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Ray.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Rotator.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Segment3D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Sphere.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Sphere_Ray.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Transform3D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Triangle.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector3D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector4D.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="3x_add_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RayTrace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sun\Math\MathUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Hitable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HitableList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BVH.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HitableSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HitRecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuRayTracing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceBuilder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Algorithm.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\BipartiteGraph.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Box.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Brush.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Capsule.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Cylinder.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Equation.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Expression.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FFT.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Geometry.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Graph.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Hash.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Line.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathConstants.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathDefine.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix3x3.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix4x4.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MatrixN.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\NumericLimits.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Pluecker.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Polygon.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Polynomial.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Polynomial3D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rand.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Random.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Ray.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rect.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rotator.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Segment3D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Sphere.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Sphere_Ray.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform3D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Triangle.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4D.h">
+      <Filter>源文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="3x_add_1.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Math\CMakeLists.txt">
+      <Filter>源文件\Math</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

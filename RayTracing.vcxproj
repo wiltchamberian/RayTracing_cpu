@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ed927b58-005f-4af4-8e0b-47a4844bcea8}</ProjectGuid>
+    <RootNamespace>RayTracing</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\GIT\testproj\RayTracing</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\GIT\testproj\RayTracing</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>G:\RayTracing;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\GIT\testproj\RayTracing</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3x_add_1.cpp" />
+    <ClCompile Include="BVH.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="GpuRayTracing.cpp" />
+    <ClCompile Include="Hitable.cpp" />
+    <ClCompile Include="HitableList.cpp" />
+    <ClCompile Include="HitableSystem.cpp" />
+    <ClCompile Include="HitRecord.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MAIN.cpp" />
+    <ClCompile Include="Math\Algorithm.cpp" />
+    <ClCompile Include="Math\BipartiteGraph.cpp" />
+    <ClCompile Include="Math\Box.cpp" />
+    <ClCompile Include="Math\Brush.cpp" />
+    <ClCompile Include="Math\Capsule.cpp" />
+    <ClCompile Include="Math\Cylinder.cpp" />
+    <ClCompile Include="Math\Equation.cpp" />
+    <ClCompile Include="Math\Expression.cpp" />
+    <ClCompile Include="Math\FFT.cpp" />
+    <ClCompile Include="Math\Geometry.cpp" />
+    <ClCompile Include="Math\Graph.cpp" />
+    <ClCompile Include="Math\Line.cpp" />
+    <ClCompile Include="Math\Matrix3x3.cpp" />
+    <ClCompile Include="Math\Matrix4x4.cpp" />
+    <ClCompile Include="Math\MatrixN.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\Pluecker.cpp" />
+    <ClCompile Include="Math\Polynomial.cpp" />
+    <ClCompile Include="Math\Polynomial3D.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="Math\Ray.cpp" />
+    <ClCompile Include="Math\Rotator.cpp" />
+    <ClCompile Include="Math\Segment3D.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
+    <ClCompile Include="Math\Sphere_Ray.cpp" />
+    <ClCompile Include="Math\Transform3D.cpp" />
+    <ClCompile Include="Math\Triangle.cpp" />
+    <ClCompile Include="Math\Vector.cpp" />
+    <ClCompile Include="Math\Vector2D.cpp" />
+    <ClCompile Include="Math\Vector3D.cpp" />
+    <ClCompile Include="Math\Vector4D.cpp" />
+    <ClCompile Include="RayTracing.cpp" />
+    <ClCompile Include="SceneBuilder.cpp" />
+    <ClCompile Include="SphereObj.cpp" />
+    <ClCompile Include="SurfaceBuilder.cpp" />
+    <ClCompile Include="texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Sun\Math\MathUtils.h" />
+    <ClInclude Include="3x_add_1.h" />
+    <ClInclude Include="BVH.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="GpuRayTracing.h" />
+    <ClInclude Include="Hitable.h" />
+    <ClInclude Include="HitableList.h" />
+    <ClInclude Include="HitableSystem.h" />
+    <ClInclude Include="HitRecord.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Math\Algorithm.h" />
+    <ClInclude Include="Math\BipartiteGraph.h" />
+    <ClInclude Include="Math\Box.h" />
+    <ClInclude Include="Math\Brush.h" />
+    <ClInclude Include="Math\Capsule.h" />
+    <ClInclude Include="Math\Cylinder.h" />
+    <ClInclude Include="Math\Equation.h" />
+    <ClInclude Include="Math\Expression.h" />
+    <ClInclude Include="Math\FFT.h" />
+    <ClInclude Include="Math\Geometry.h" />
+    <ClInclude Include="Math\Graph.h" />
+    <ClInclude Include="Math\Hash.h" />
+    <ClInclude Include="Math\Line.h" />
+    <ClInclude Include="Math\MathConstants.h" />
+    <ClInclude Include="Math\MathDefine.h" />
+    <ClInclude Include="Math\MathUtils.h" />
+    <ClInclude Include="Math\Matrix3x3.h" />
+    <ClInclude Include="Math\Matrix4x4.h" />
+    <ClInclude Include="Math\MatrixN.h" />
+    <ClInclude Include="Math\NumericLimits.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\Pluecker.h" />
+    <ClInclude Include="Math\Polygon.h" />
+    <ClInclude Include="Math\Polynomial.h" />
+    <ClInclude Include="Math\Polynomial3D.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\Rand.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Math\Ray.h" />
+    <ClInclude Include="Math\Rect.h" />
+    <ClInclude Include="Math\Rotator.h" />
+    <ClInclude Include="Math\Segment3D.h" />
+    <ClInclude Include="Math\Sphere.h" />
+    <ClInclude Include="Math\Sphere_Ray.h" />
+    <ClInclude Include="Math\Transform3D.h" />
+    <ClInclude Include="Math\Triangle.h" />
+    <ClInclude Include="Math\Vector.h" />
+    <ClInclude Include="Math\Vector2D.h" />
+    <ClInclude Include="Math\Vector3D.h" />
+    <ClInclude Include="Math\Vector4D.h" />
+    <ClInclude Include="RayTrace.h" />
+    <ClInclude Include="RayTracing.h" />
+    <ClInclude Include="SceneBuilder.h" />
+    <ClInclude Include="SphereObj.h" />
+    <ClInclude Include="SurfaceBuilder.h" />
+    <ClInclude Include="texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Math\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
